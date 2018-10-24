@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<script type="text/javascript" src="calculadora.js"></script>
+	<link rel="stylesheet" type="text/css" href="discalc.css">
+</head>
+<body>
+	<div id="cuerpo">
+		<div id="barra">Barrita de Estado</div>
+		<input type="textarea" id="resultado">
+
+		<input type="button" class="operandos"value="CE" id="CE" onclick=borrar()>
+		<a href="secr.html"><input type="button" class="operandos" value="+/-" onclick="pagina()"></a>
+		<input type="button" class="operandos" value="%" id="residuo" onclick="concatenar('%')">
+		<input type="button" class="operandos" value="/" id="entre" onclick="concatenar('/')">
+		<input type="button" class="numeros" value="7" id="7" onclick="concatenar(7)">
+		<input type="button" class="numeros" value="8" id="8" onclick="concatenar(8)">
+		<input type="button" class="numeros" value="9" id="9" onclick="concatenar(9)">
+		<input type="button" class="operandos" value="*" id="por" onclick="concatenar('*')">
+		<input type="button" class="numeros" value="4" id="4" onclick="concatenar(4)">
+		<input type="button" class="numeros" value="5" id="5" onclick="concatenar(5)">
+		<input type="button" class="numeros" value="6" id="6" onclick="concatenar(6)">
+		<input type="button" class="operandos" value="+" id="mas" onclick="concatenar('+')">
+		<input type="button" class="numeros" value="1" id="1" onclick="concatenar(1)">
+		<input type="button" class="numeros" value="2" id="2" onclick="concatenar(2)">
+		<input type="button" class="numeros" value="3" id="3" onclick="concatenar(3)">
+		<input type="button" class="operandos" value="-" id="resta" onclick="concatenar('-')">
+		<input type="button" class="numeros" value="." id="punto" onclick="concatenar('.')">
+		<input type="button" class="numeros" value="0" id="0" onclick="concatenar(0)">
+		<input type="button" id="igual" value="=" onclick="igual()">
+	</div>
+</body>
+</html>
