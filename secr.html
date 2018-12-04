@@ -2,19 +2,17 @@
 <html>
 <head>
 	<title></title>
+	<script src="calculadora.js"></script>
 	<link rel="stylesheet" type="text/css" href="discalc.css">
-	<meta name="viewport" content="width=device-width">
 </head>
-<body >
-	<div id="cuerpo" style="background-color: #2E303C">
-		<div id="barra">Barrita de Estado</div>
-		<div id="acor">Nuevo Acordeon</div>
+<body onload="importar()">
+	<div id="cuerpo">
+		<div id="acor">TU ACORDEÓN</div>
+		<input type="text" id="cont" value="Aquí deberás colocar el contenido de tu acordeón, esto es un área grande de texto de entrada de usuario. Se puede guardar un solo acordeón a la vez. En caso de tener uno guardado será cargado aquí y podrá ser reemplazado." onclick="test()"> 
 		
-		<textarea id="cont" >Aquí deberás colocar el contenido de tu acordeón, esto es un área grande de texto de entrada de usuario.
-
-Se puede guardar un solo acordeón a la vez. En caso de tener uno guardado será cargado aquí y podrá ser reemplazado.</textarea>
-<a href="index.html"><button id="reg">REGESAR</button></a>
-<button id="gua">GUARDAR</button>
+		</input>
+		<a href="index.html"><button id="reg">REGESAR</button></a>
+		<button id="gua" onclick='guardar()'>GUARDAR</button>
 	</div>
 </body>
 <script type="text/javascript"></script>

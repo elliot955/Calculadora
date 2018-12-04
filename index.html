@@ -2,18 +2,17 @@
 <html>
 <head>
 	<title>
-		
+		CALCULADORA SECRETA
 	</title>
 	<script type="text/javascript" src="calculadora.js"></script>
 	<link rel="stylesheet" type="text/css" href="discalc.css">
 </head>
 <body>
 	<div id="cuerpo">
-		<div id="barra">Barrita de Estadoooooooo</div>
 		<input type="textarea" id="resultado">
 
 		<input type="button" class="operandos"value="CE" id="CE" onclick=borrar()>
-		<a href="secr.html"><input type="button" class="operandos" value="+/-" onclick="pagina()"></a>
+		<input type="button" class="operandos" value="+/-" onclick="concatenar('+/-')"></a>
 		<input type="button" class="operandos" value="%" id="residuo" onclick="concatenar('%')">
 		<input type="button" class="operandos" value="/" id="entre" onclick="concatenar('/')">
 		<input type="button" class="numeros" value="7" id="7" onclick="concatenar(7)">
